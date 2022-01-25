@@ -2,18 +2,17 @@ import React from "react";
 import FilmCard from "./FilmCard";
 
 function FilmCards(props) {
+    const {films = []} = props;
     return(
         <div className="Movies">
-        { props.films.map((film, index) => (
-            <FilmCard 
-                key={index} 
-                title={film.Title} 
-                poster={film.Poster} 
-                type={film.Type} 
-                year={film.Year}
-             />
-        )) 
-        }
+            {films.length ? films.map(film => (
+                <FilmCard 
+                    key={film.imdbID} 
+                    {...film}
+                />
+            )) :
+            <h4>Nothing found</h4> 
+            }
         </div>     
     );
         
