@@ -20,7 +20,11 @@ function FilmCard(props) {
             <a href="#">{title}</a>
         </div>
         <div className="card-action">
+<<<<<<< HEAD
             <p>{type}</p>
+=======
+            <p>{props.type}</p>
+>>>>>>> c2f61fd2946a281c8e08080aca3e0e709de73616
             <span>year: &nbsp;{year}</span>
         </div>
       </div>

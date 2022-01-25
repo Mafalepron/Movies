@@ -26,6 +26,7 @@ nav {
 
 .search-btn {
   position: absolute;
+<<<<<<< HEAD
   top: 100%;
   right: 0.5rem;
 }
@@ -58,4 +59,15 @@ nav {
 .preloader-wrapper {
   margin-left: 45%;
   margin-top: 50px;
+=======
+  top: 0;
+  right: 0.5rem;
+
+}
+
+.search-form {
+  display: inline-flex;
+  padding: 14px;
+
+>>>>>>> c2f61fd2946a281c8e08080aca3e0e709de73616
 }

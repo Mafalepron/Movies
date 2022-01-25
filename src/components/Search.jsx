@@ -1,9 +1,13 @@
 import React from "react";
+import { SearchCategories } from "./SearchCategories";
 
 class Search extends React.Component {
       state = {   
           search: '',
+<<<<<<< HEAD
           type: '',
+=======
+>>>>>>> c2f61fd2946a281c8e08080aca3e0e709de73616
       };  
 
 
@@ -31,6 +35,7 @@ class Search extends React.Component {
                       onChange={(e) => this.setState({search: e.target.value})}
                       onKeyDown={this.handleKey}
                   />
+<<<<<<< HEAD
                     <button 
                         onClick={() => this.props.searchMovies(this.state.search, this.state.type)} 
                         className="btn search-btn"
@@ -80,6 +85,13 @@ class Search extends React.Component {
                     </label>
                 </p>
                 </form>
+=======
+                    <button onClick={() => this.props.searchMovies(this.state.search)} className="btn search-btn">
+                      Search
+                    </button>
+                    <SearchCategories />
+                </div>
+>>>>>>> c2f61fd2946a281c8e08080aca3e0e709de73616
           </div>
 
 
